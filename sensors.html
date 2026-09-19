@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sensors,Transducer & Modules Directory -Hardwarepedia</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">HP</div>
+                <span>Hardwarepedia</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="boards.html">Boards</a></li>
+                    <li><a href="sensors.html" class="active">Sensor</a></li>
+                    <li><a href="protocols.html">Protocols</a></li>
+                    <li><a href="pinout.html">Pinout</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-trigger-btn" type="button">
+                    <span>search hardware</span>
+                    <kbd>Ctrl K</kbd>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation">+</button>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Sensors & Modules</li>
+            </ul>
+            <div class="page-header">
+                <h1 class="page-title">Sensors & Peripheral Modules</h1>
+                <p class="page-description">
+                    wiring pinouts, default, I2C address, Operating Voltages, Accuracy tolerances and copyable C++ Driver code for commonly used embedded sensors
+                </p>
+            </div>
+            <div class="filter-bar">
+                <div class="filter-group" style="flex: 1; min-width: 220px;">
+                    <label for="sensor-search">Search:</label>
+                    <input type="text" id="sensor-search" class="form-input" placeholder="search sensors by name">
+                </div>
+                <div class="filter-group">
+                    <label for="sensor-type-filter">Category:</label>
+                    <select id="sensor-type-filter" class="form-select">
+                        <option value="all">All Categories</option>
+                        <option value="Enviromental">Enviromental (Temp / Hum / press)</option>
+                        <option value="Motion"> Motion & IMU (Gyro/Accel)</option>
+                        <option value="Distance">Distance & Optical (Ultrasonic/TOF)</option>
+                        <option value="Display"> Display (OLED)</option>
+
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sensor-iface-filter">Bus Interface:</label>
+                    <select id="sensor-iface-filter" class="form-select">
+                        <option value="all">All Interfaces</option>
+                        <option value="I2C">I2C</option>
+                        <option value="SPI">SPI</option>
+                        <option value="DIgital">DIgital Pulse (GPIO)</option>
+                    </select>
+                </div>
+                    <div style="font-size: 0.9rem; color: var(--text-muted); font-family: var(--font-mono); margin-left: auto;" id="sensor-results-count">
+                        loading
+                    </div>
+                </div>
+    </main>
+</body>
+</html>
